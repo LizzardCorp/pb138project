@@ -49,6 +49,7 @@ Students will design and create a web app on the Java EE platform for revenue an
 ### Class diagram
 ![Class diagram](https://github.com/LizzardCorp/pb138project/blob/master/docs/diagrams/classDiagram.png)
 
+
 ## Reports
 
 Member | PDF | Docbook
