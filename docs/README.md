@@ -49,6 +49,14 @@ Students will design and create a web app on the Java EE platform for revenue an
 ### Class diagram
 ![Class diagram](https://github.com/LizzardCorp/pb138project/blob/master/docs/diagrams/classDiagram.png)
 
+## Reports
+Member | PDF | Docbook
+--- | --- | --- 
+Pavel Vyskočil | [<img src="pdf.png">](reports/vyskocil_report.pdf) | [<img src="docbook.png">](reports/vyskocil_report.xml)
+Peter Balčirák | [<img src="pdf.png">](reports/balcirak_report.pdf) | [<img src="docbook.png">](reports/balcirak_report.xml)
+Dominik František Bučík | [<img src="pdf.png">](reports/bucik_report.pdf) | [<img src="docbook.png">](reports/bucik_report.xml)
+Andrej Dravecký | [<img src="pdf.png">](reports/dravecky_report.pdf) | [<img src="docbook.png">](reports/dravecky_report.xml)
+
 ## Prerequsities
 `Install eXistDB on your machine. Create user admin with password admin1. Create collection called accounting.`
 
