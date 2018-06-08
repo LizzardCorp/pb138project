@@ -44,10 +44,12 @@ Students will design and create a web app on the Java EE platform for revenue an
 ## Basic scheme
 
 ### Use case diagram
-[<img src="useCaseDiagram.png">](diagrams/useCaseDiagram.png)
+
+![Use Case diagram](https://github.com/LizzardCorp/pb138project/blob/master/docs/diagrams/useCaseDiagram.png)
 
 ### Class diagram
-[<img src="useCaseDiagram.png">](diagrams/classDiagram.png)
+
+![Class diagram](https://github.com/LizzardCorp/pb138project/blob/master/docs/diagrams/classDiagram.png)
 
 
 ## Reports
