@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="cs">
+    <info>
+        <title>AccountingWebXML - CIA</title>
+        <author>
+            <personname>Dominik František Bučík</personname>
+            <email>bucik@ics.muni.cz</email>
+        </author>
+    </info>
+
+    <section>
+        <title>Úvod</title>
+        <para>
+			Úlohou tohto projektu bolo vytvoriť webovú aplikáciu na ptatforme Java EE pre evidenciu príjmov a výdajov,
+			ktorá bude ukladať dáta do natívnej XML databázy.
+        </para>
+        <para>
+            Na začiatku práce na aplikácii sme vytvorili jej návrh a rozdelili si úlohy. Mojou úlohou bolo vytvoriť užívateľské 
+            rozhranie vo forme webovej aplikácie. Okrem toho som sa venoval aj úpravám ostatných vrstiev aplikácie.
+        </para>
+    </section>
+    <section>
+        <title>Riešenie</title>
+        <para>
+			Prvým krokom bol výber prostriedkov pre vytvorenie užívateľského rozhrania. Pre generovanie stránok som si vybral 
+			prístup pomocou JSP stránok. Táto architektúra poskytuje dynamicky generovaný obsah stránok s rozdelením do modulov.
+			To zabraňuje repetícii kódu. Dizajn stránok je podporený frameworkom Bootstrap. Okrem toho som použil sadu ikoniek Font Awesome.
+			Vzhľad stránok je doplnený vlastnými štýlmi CSS. Interaktivita je sprostredkovaná cez JavaScript.
+        </para>
+        <para>
+            Druhým krokom bola implementácia tried pripravujúcich dáta pre JSP stránky. V tejto úlohe som využil framework Spring,
+            konkrétne Spring MVC. Tento framework umožňuje jednoduché generovanie dát pre "pohľady" cez tzv. "controllery". Výhodou 
+            je taktiež možnosť separácie metód do rôznych controllerov. Takto je teda na jednom mieste zhromaždený kód zaoberajúci sa istými entitami / 
+            funkcionalitou.
+        </para>
+        <para>
+            Treťou úlohou bolo vyriešenie ako aplikáciu nasadiť do kontajneru Jetty. Pre túto úlohu som využil Maven Jetty Plugin. Následne 
+            som sa venoval vylaďovaniu aplikácie vo všetkých vrstvách.
+        </para>
+    </section>
+    <section>
+        <title>Záver</title>
+        <para>Projekt považujem za úspešný. Aplikácia splňuje požadovanú funkcionalitu. Výsledok samozrejme nie je dokonalý a je 
+        v ňom veľa miest na zlepšenie. Práca na tomto projekte mi priniesla najmá zlepšenie osobných zručností. Naučil som sa pracovať 
+        s novými nástrojmi a vyskúšal si prácu vo väčšom tíme.</para>
+    </section>
+</article>
