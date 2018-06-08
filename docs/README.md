@@ -54,7 +54,7 @@ Member | PDF | Docbook
 --- | --- | --- 
 Pavel Vyskočil | [<img src="pdf.png">](reports/vyskocil_report.pdf) | [<img src="docbook.png">](reports/vyskocil_report.xml)
 Peter Balčirák | [<img src="pdf.png">](reports/balcirak_report.pdf) | [<img src="docbook.png">](reports/balcirak_report.xml)
-Dominik František Bučík | [<img src="pdf.png">](reports/bucik_report.pdf) | [<img src="docbook.png">](reports/bucik_report.xml)
+Dominik Bučík | [<img src="pdf.png">](reports/bucik_report.pdf) | [<img src="docbook.png">](reports/bucik_report.xml)
 Andrej Dravecký | [<img src="pdf.png">](reports/dravecky_report.pdf) | [<img src="docbook.png">](reports/dravecky_report.xml)
 
 ## Prerequsities
