@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="cs">
+    <info>
+        <title>AccountingWebXML - CIA</title>
+        <author>
+            <personname>Andrej Dravecký</personname>
+            <email>andrej.dravecky@orava.sk</email>
+        </author>
+    </info>
+
+    <section>
+        <title>Úvod</title>
+        <para>
+			Úlohou tohto projektu bolo vytvoriť webovú aplikáciu na ptatforme Java EE pre evidenciu príjmov a výdajov,
+			ktorá bude ukladať dáta do natívnej XML databázy.
+        </para>
+		
+        <para>
+            Mojou úlohou bol návrh XSD schémy databázy a implementácia exportu dát vo vhodnej forme do formátu PDF.
+        </para>
+    </section>
+	
+    <section>
+        <title>Riešenie</title>
+        <para>
+			Po návrhu a schválení štruktúry databázy týmom bolo mojou úlohou vytvoriť schému pre validáciu XML databázy.
+			Schéma (viď. súbor cia-schema.xsd) je vytvorená pomocou XSDSchema a určuje ako štruktúru databázy, tak aj formát jednotlivých prvkov a zaisťuje unikátnosť ID. 
+        </para>
+			
+        <para>
+            Druhá časť mojej úlohy spočívala vo vytvorení generátora dokumentov schopného exportovať dáta do želanej PDF podoby.
+			Export do PDF prebieha v troch krokoch:
+        </para>
+
+        <para>
+			V prvom kroku získame zo spracovávaných objektov ich XML reprezentácie, a vložíme ich do XML štruktúry pre následnú XSL transformáciu.
+        </para>
+		
+		<para>
+			Druhý krok pozostáva z XSL transformácie XML dát do HTML formátu. Pre každý druh exportovaných dát je pripravený osobitný .xsl dokument so želanou XSL transformáciou (viď. súbory invoice2html.xsl, ab2html.xsl a flow2html.xsl).
+			Ku každej transformácii je pripojený CSS stylesheet určujúci vizuálnu formu následnej reprezenátcie dát v PDF.
+		</para>
+		<para>
+			Tretím, a posledným, krokom je vytvorenie PDF z dát v HTML formáte, ktoré prebieha pomocou knižnice iText. Po transformácii dát je výsledkom PDF dokument v zodpovedajúcej podobe. 
+		</para>
+
+    </section>
+
+    <section>
+
+        <title>Záver</title>
+
+        <para>
+			Výsledkom práce je základná verzia aplikácie, ktorú je možné ďalej rozširovať. Okrem praktických výsledkov mi riešenie tejto úlohy prinieslo skúsenosti s novými nástrojmi, ako aj dôležité skúsenosti s prácou v týme. 
+		</para>
+
+    </section>
+
+</article>
