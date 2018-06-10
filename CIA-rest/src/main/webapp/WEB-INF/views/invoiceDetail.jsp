@@ -67,13 +67,13 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text">Issued on</span>
                 </div>
-                <input class="form-control" type="date" id="issued" name="issued" value="<c:out value="${invoice.issueDate}"/>" <c:out value="${inputParams}"/>>
+                <input class="form-control" type="date" id="issued" name="issued" max="<c:out value="${dateToday}"/>" value="<c:out value="${invoice.issueDate}"/>" <c:out value="${inputParams}"/>>
             </div>
             <div class="col-md-6 input-group">
                 <div class="input-group-prepend">
                     <span class="input-group-text">Due to</span>
                 </div>
-                <input class="form-control" type="date" id="dueTo" name="dueTo" value="<c:out value="${invoice.dueDate}"/>" <c:out value="${inputParams}"/>>
+                <input class="form-control" type="date" id="dueTo" name="dueTo" min="<c:out value="${dateToday}"/>" value="<c:out value="${invoice.dueDate}"/>" <c:out value="${inputParams}"/>>
             </div>
         </div>
         <div class="row mb-3">

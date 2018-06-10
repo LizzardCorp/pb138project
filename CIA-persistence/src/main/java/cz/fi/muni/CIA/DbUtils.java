@@ -295,8 +295,8 @@ public class DbUtils {
 	 */
 	public static Invoice invoiceXMLToInvoice(String invoiceXML) {
 		Invoice invoice = new Invoice();
-		PersonManager personManager = new PersonManagerImpl();
-		OwnerManager ownerManager = new OwnerManagerImpl();
+		PersonManager personManager = new PersonManagerImpl(loadCollection(loadConfig()), loadConfig());
+		OwnerManager ownerManager = new OwnerManagerImpl(loadCollection(loadConfig()), loadConfig());
 
 		try {
 			DocumentBuilder documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();

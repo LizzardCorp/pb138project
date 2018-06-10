@@ -28,16 +28,16 @@ public class PersistenceApplicationContext {
 
 	@Bean
 	public PersonManager personManager() {
-		return new PersonManagerImpl();
+		return new PersonManagerImpl(DbUtils.loadCollection(configuration()), configuration());
 	}
 
 	@Bean
 	public InvoiceManager invoiceManager() {
-		return new InvoiceManagerImpl();
+		return new InvoiceManagerImpl(DbUtils.loadCollection(configuration()), configuration());
 	}
 
 	@Bean
 	public OwnerManager ownerManager() {
-		return new OwnerManagerImpl();
+		return new OwnerManagerImpl(DbUtils.loadCollection(configuration()), configuration());
 	}
 }

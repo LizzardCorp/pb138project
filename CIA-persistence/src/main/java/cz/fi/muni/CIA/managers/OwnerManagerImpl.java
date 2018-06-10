@@ -21,12 +21,13 @@ import java.util.logging.Logger;
 public class OwnerManagerImpl implements OwnerManager {
 
     private static final Logger logger = Logger.getLogger(OwnerManagerImpl.class.getName());
-
-    @Autowired
+    private Collection collection;
     private Configuration configuration;
 
-    @Autowired
-    private Collection collection;
+    public OwnerManagerImpl(Collection collection, Configuration configuration) {
+        this.collection = collection;
+        this.configuration = configuration;
+    }
 
     @Override
     public void createOwner(Owner owner) {

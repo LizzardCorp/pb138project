@@ -29,11 +29,13 @@ import java.util.logging.Logger;
 public class PersonManagerImpl implements PersonManager {
 	private static final Logger logger = Logger.getLogger(PersonManagerImpl.class.getName());
 
-	@Autowired
 	private Configuration configuration;
-
-	@Autowired
 	private Collection collection;
+
+	public PersonManagerImpl(Collection collection, Configuration configuration) {
+		this.collection = collection;
+		this.configuration = configuration;
+	}
 
 	@Override
 	public void createPerson(Person person) {

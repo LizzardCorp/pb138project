@@ -32,12 +32,13 @@ import java.util.logging.Logger;
 public class InvoiceManagerImpl implements InvoiceManager {
 
 	private static final Logger logger = Logger.getLogger(InvoiceManagerImpl.class.getName());
-
-	@Autowired
 	private Configuration configuration;
-
-	@Autowired
 	private Collection collection;
+
+	public InvoiceManagerImpl(Collection collection, Configuration configuration) {
+		this.collection = collection;
+		this.configuration = configuration;
+	}
 
 	@Override
 	public void addInvoice(Invoice invoice) {
