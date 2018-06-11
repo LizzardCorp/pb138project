@@ -14,7 +14,7 @@
 </c:choose>
 <div class="jumbotron">
     <c:if test="${not empty message}">
-        <o:alert alertType="${alterType}" message="${message}"/>
+        <o:alert alertType="${alertType}" message="${message}"/>
     </c:if>
     <form class="container details-form" method="POST" action="/accounting/<c:out value='${action}'/>">
         <input type="hidden" name="id" value="${person.id}"/>
