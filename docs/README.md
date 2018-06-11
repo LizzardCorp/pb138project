@@ -29,7 +29,6 @@ Students will design and create a web app on the Java EE platform for revenue an
 * Backend supported by eXistdb
   * Developed by Pavel Vyskočil
   * Data stored in collections using eXistdb
-  * Database is shipped in application, user doesn't have to install it as standalone component
   * All data validated, stored as XML documents for easy manipulation
 * Logging with Log4J 
 * Testing with JUnit, AsssertJ and Mockito
@@ -40,6 +39,8 @@ Students will design and create a web app on the Java EE platform for revenue an
   * Developed by Dominik František Bučík
   * User friendly UI easy to use
   * Intuitive design
+* generating PDF files with iText library
+  * Developed by Andrej Dravecký
 
 ## Basic scheme
 
@@ -61,16 +62,36 @@ Peter Balčirák | [<img src="pdf.png">](reports/balcirak_report.pdf) | [<img sr
 Dominik František Bučík | [<img src="pdf.png">](reports/bucik_report.pdf) | [<img src="docbook.png">](reports/bucik_report.xml)
 Andrej Dravecký | [<img src="pdf.png">](reports/dravecky_report.pdf) | [<img src="docbook.png">](reports/dravecky_report.xml)
 
+[Presentation](https://docs.google.com/presentation/d/16hcUGvnzESfGkhqnccVZyqCjYSYwfC5cjPgqFa48kY0/edit?usp=sharing)
+
+## Screenshots
+
+<img src="title.png" alt="hi" class="inline"/>
+
+<img src="personList.png" alt="hi" class="inline"/>
+
+<img src="editPerson.png" alt="hi" class="inline"/>
+
 ## Prerequsities
-`Install eXistDB on your machine. Create user admin with password admin1. Create collection called accounting.`
+Install eXistDB on your machine. Configure the access to database in config.conf file.
+
+Install Maven on your machine
 
 ## Running the project
-`Run the eXistDB server on localhost`
+1.Run the eXistDB server (configuration for server can be changed in config.conf).
 
-`git clone https://github.com/LizzardCorp/pb138project.git`
+2.Clone and run the project
+```
+git clone https://github.com/LizzardCorp/pb138project.git
 
-`cd pb138project`
+cd pb138project
 
-`mvn clean install`
+mvn clean install
 
-`mvn jetty:run`
+mvn jetty:run-war
+```
+
+3.Access localhost:8082/accounting/ in your browser
+
+## Configuring database
+Database can be configured in the config.conf file. Shortcut to this file is in the root of the application.

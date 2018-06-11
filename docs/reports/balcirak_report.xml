@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="sk">
+    <info>
+        <title>AccountingWebXML - CIA</title>
+        <author>
+            <personname>Peter Balčirák</personname>
+            <email>peter.balcirak@gmail.com</email>
+        </author>
+    </info>
+
+    <section>
+        <title>Úvod</title>
+        <para>
+            Cieľom nášho projektu bolo vytvoriť webovú aplikáciu na platforme Java EE pre evidenciu príjmov a výdavkov,
+            ktorá bude ukladať dáta do nativnej XML databáze.
+        </para>
+        <para>
+            Po dohode bolo mojou úlohou vytvoriť servisnú vrstvu našej aplikácie. Zároveň som mal na starosti našu projektovú stránku. 
+        </para>
+    </section>
+    <section>
+        <title>Riešenie</title>
+        <para>
+            Pri implementácii som potreboval najprv získať prístup k vrstve pracujúcej s databázou. Na to som pužil Spring framework, konkrétne spring application context.
+	    Pomocou neho som nakonfiguroval spojenie medzi týmito dvoma vrstvami.
+        </para>
+	<para>
+	    Následne som naimplementoval metódy	pre prácu s entitami Invoice a Person. Konkrétne metódy som vytvoril podľa potrieb webovej vrstvy. Išlo prevažne o vytváranie, mazanie, editovanie a získavanie daných entít. 
+	    V metódach boli zahrnuté aj rozsiahle kontroly vstupov, aby sme sa vyhli problémom kedy by napríklad uživateľ chcel vymazať niečo čo nemôže.
+	</para>
+	<para>
+	    Každú implementovanú metódu som testoval, ako na korektné, tak aj na nekorektné vstupy. 
+	    Na testy som použil JUnit a Mockito framework. Pomocou Mockita som simuloval spojenie s dátovou vrstvou a sledoval som, či v nej boli volané správne metódy.
+	</para>
+	<para>
+	    Popri implementovaní servisnej vrstvy som sa staral aj o našu projektovú stránku. Podľa odporúčaní som využil Github pages, kde som smeroval celú našu projektovú dokumentáciu.
+	    Use case a class diagrami pre túto stránku som vytvoril v online verzii Visual Paradigme.
+	</para>
+    </section>
+    <section>
+        <title>Záver</title>
+        <para>
+            Úspešne sa nám podarilo vytvoriť webovú aplikáciu podľa požadovaných špecifikácií. Som rád, že som si mohol vyskúšať prácu s pre mňa novými technológiami a zároveň spolupracovať v týme viacerých ľudí.   
+        </para>
+    </section>
+</article>
