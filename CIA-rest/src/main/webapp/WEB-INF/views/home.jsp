@@ -23,28 +23,22 @@
                     </div>
                 </c:when>
                 <c:otherwise>
-                    <div class="col-md-3 ico-big">
+                    <div class="col-md-4 ico-big">
                         <a href="/accounting/editOwner">
                             <i class="fas fa-user-edit"></i>
                             <span>Edit owner</span>
                         </a>
                     </div>
-                    <div class="col-md-3 ico-big">
+                    <div class="col-md-4 ico-big">
                         <a href="/accounting/invoices">
                             <i class="fas fa-receipt"></i>
                             <span>Invoices</span>
                         </a>
                     </div>
-                    <div class="col-md-3 ico-big">
+                    <div class="col-md-4 ico-big">
                         <a href="/accounting/addressBook">
                             <i class="fas fa-address-book"></i>
                             <span>Address Book</span>
-                        </a>
-                    </div>
-                    <div class="col-md-3 ico-big">
-                        <a href="/accounting/statistics">
-                            <i class="fas fa-chart-pie"></i>
-                            <span>Statistics</span>
                         </a>
                     </div>
                 </c:otherwise>
